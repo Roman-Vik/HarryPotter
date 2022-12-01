@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 688px;
+  background: #f5f5f5;
+}
+
+body {
+  background: #f5f5f5;
+  margin: 0 auto;
+}
+
+img {
+  border-radius: 4px 4px 0px 0px;
+}
+
+.header {
+  padding: 40px 0 48px 0;
+}
+
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin: 0 0 0 0;
+}
+
+h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.formFilter {
+  padding: 0 0 40px 0;
+}
+
+.formFilter__wraper > form {
+  display: flex;
+  gap: 20px;
+}
+
+.formFilter__name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #818182;
+  width: 40px;
+}
+
+.formFilter__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.formFilter__field {
+  background: #FFFFFF;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+  width: 452px;
+  height: 38px;
+}
+
+.formFilter__book {
+  width: 216px;
+  height: 38px;
+  background: #FFFFFF;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+}
+
+.deck {
+  border-top: solid 1px #DEE2E6;
+}
+.deck__cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 334px));
+  padding: 40px 0 0 0;
+  justify-content: center;
+}
+.deck__img {
+  width: 334px;
+  height: 192px;
+}
+.deck__bio {
+  padding: 24px;
+  background: #FFFFFF;
+}
+.deck__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #152536;
+}
+.deck__text-bolt {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  color: #152536;
+}/*# sourceMappingURL=style.css.map */
