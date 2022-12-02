@@ -68,11 +68,18 @@ h2 {
 }
 
 .formFilter__field {
+  padding-left: 18px;
   background: #FFFFFF;
   border: 1px solid #CED4DA;
   border-radius: 4px;
   width: 452px;
   height: 38px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ABB5BE;
 }
 
 .formFilter__book {
@@ -81,6 +88,13 @@ h2 {
   background: #FFFFFF;
   border: 1px solid #CED4DA;
   border-radius: 4px;
+  padding-left: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ABB5BE;
 }
 
 .deck {
