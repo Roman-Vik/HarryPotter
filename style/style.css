@@ -5,26 +5,27 @@
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 688px;
+  width: 100%;
   background: #f5f5f5;
-}
-
-body {
-  background: #f5f5f5;
-  margin: 0 auto;
 }
 
 img {
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0 0;
 }
 
 .header {
   padding: 40px 0 48px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.header__wrapper {
+  width: max-content;
 }
 
 h1 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -35,7 +36,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -43,38 +44,57 @@ h2 {
   color: #000000;
 }
 
-.formFilter {
-  padding: 0 0 40px 0;
+@media (max-width: 785px) {
+  h1 {
+    text-align: start;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 63px;
+    margin-bottom: 14px;
+  }
+  h2 {
+    text-align: start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 28px;
+  }
+  .header__wrapper {
+    width: 100vw;
+    padding: 0 40px;
+  }
 }
-
-.formFilter__wraper > form {
+.header__formFilter > form {
   display: flex;
   gap: 20px;
+  margin-top: 48px;
 }
 
-.formFilter__name {
-  font-family: "Inter";
+.header__name {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   color: #818182;
   width: 40px;
+  margin-bottom: 3px;
 }
 
-.formFilter__item {
+.header__item {
   display: flex;
   flex-direction: column;
 }
 
-.formFilter__field {
+.header__field {
   padding-left: 18px;
   background: #FFFFFF;
   border: 1px solid #CED4DA;
   border-radius: 4px;
   width: 452px;
   height: 38px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -82,14 +102,14 @@ h2 {
   color: #ABB5BE;
 }
 
-.formFilter__book {
+.header__book {
   width: 216px;
   height: 38px;
   background: #FFFFFF;
   border: 1px solid #CED4DA;
   border-radius: 4px;
   padding-left: 15px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -97,26 +117,42 @@ h2 {
   color: #ABB5BE;
 }
 
+@media (max-width: 785px) {
+  .header__formFilter > form {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .header__field {
+    width: 100%;
+  }
+  .header__book {
+    width: 100%;
+  }
+}
 .deck {
   border-top: solid 1px #DEE2E6;
 }
 .deck__cards {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 334px));
-  padding: 40px 0 0 0;
+  grid-template-columns: repeat(2, 334px);
   justify-content: center;
+  padding: 40px 40px 0 40px;
+}
+.deck__card {
+  max-width: 334px;
 }
 .deck__img {
   width: 334px;
   height: 192px;
 }
 .deck__bio {
+  width: 334px;
   padding: 24px;
   background: #FFFFFF;
 }
 .deck__text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -124,10 +160,18 @@ h2 {
   color: #152536;
 }
 .deck__text-bolt {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 24px;
   color: #152536;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media (max-width: 785px) {
+  .deck__cards {
+    grid-template-columns: repeat(1, 334px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

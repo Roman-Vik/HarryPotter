@@ -1,8 +1,13 @@
 .header
   padding: 40px 0 48px 0
-  
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  &__wrapper
+   width: max-content
 h1
-  font-family: 'Inter'
+  font-family: 'Inter', sans-serif
   font-style: normal
   font-weight: 700
   font-size: 64px
@@ -11,9 +16,27 @@ h1
   color: #000000
   margin: 0 0 0 0
 h2
-  font-family: 'Inter'
+  font-family: 'Inter', sans-serif
   font-style: normal
   font-weight: 400
   font-size: 21px
   line-height: 36px
   color: #000000
+
+@media (max-width: 785px)
+ h1
+  text-align: start
+  font-weight: 700
+  font-size: 52px
+  line-height: 63px
+  margin-bottom: 14px
+ h2
+  text-align: start
+  font-style: normal
+  font-weight: 400
+  font-size: 16px
+  line-height: 28px
+  margin-bottom: 28px
+ .header__wrapper
+   width: 100vw
+   padding: 0 40px

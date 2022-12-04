@@ -17,37 +17,32 @@
     <header>
       <div class="container">
         <section class="header">
-          <h1 class="header__headline">Harry Potter</h1>
-          <h2>View all characters from the Harry Potter universe</h2>
+          <div class="header__wrapper">
+            <h1>Harry Potter</h1>
+            <h2>View all characters from the Harry Potter universe</h2>
+            <div class="header__formFilter">
+              <form>
+                <div class="header__item">
+                  <label class="header__name" for="name">Name</label>
+                  <input class="header__field" placeholder="Enter name" type="text" id="name" />
+                </div>
+                <div class="header__item">
+                  <label class="header__name" for="school">School</label>
+                  <select class="header__book" id="school">
+                    <option value="">All school</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
         </section>
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="formFilter">
-          <div class="formFilter__wraper">
-            <form>
-              <div class="formFilter__item">
-                <label class="formFilter__name" for="name">Name</label>
-                <input class="formFilter__field" placeholder="Enter name" type="text" id="name" />
-              </div>
-              <div class="formFilter__item">
-
-                <label class="formFilter__name" for="school">School</label>
-                <select class="formFilter__book" id="school">
-                  <option value="gryffindor">Gryffindor</option>
-                  <option value="slytherin">Slytherin</option>
-                  <option value="hufflepuff">Hufflepuff</option>
-                  <option value="ravenclaw">Ravenclaw</option>
-                </select>
-              </div>
-            </form>
-          </div>
-        </section>
-      </div>
       <section class="deck">
         <div class="container">
           <div class="deck__cards">
+          </div>
         </div>
       </section>
     </main>

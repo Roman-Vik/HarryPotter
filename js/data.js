@@ -427,7 +427,7 @@ const data = [
     patronus: '',
     hogwartsStudent: false,
     hogwartsStaff: true,
-    actor: 'Maxime, Alanis and Tommy the cats',
+    actor: 'Maxime',
     alive: true,
     image: 'http://hp-api.herokuapp.com/images/norris.JPG',
   },

@@ -1,49 +1,54 @@
-.formFilter
-  padding: 0 0 40px 0
-.formFilter__wraper > form
+.header__formFilter > form
   display: flex
   gap: 20px
-.formFilter__name
-  font-family: 'Inter'
+  margin-top: 48px
+.header__name
+  font-family: 'Inter', sans-serif
   font-style: normal
   font-weight: 400
   font-size: 16px
   line-height: 28px
   color: #818182
   width: 40px
-.formFilter__item
+  margin-bottom: 3px
+.header__item
   display: flex
   flex-direction: column
-.formFilter__field
+.header__field
   padding-left: 18px
   background: #FFFFFF
   border: 1px solid #CED4DA
   border-radius: 4px
   width: 452px
   height: 38px
-  font-family: 'Inter'
+  font-family: 'Inter', sans-serif
   font-style: normal
   font-weight: 400
   font-size: 16px
   line-height: 21px
   color: #ABB5BE
-
-.formFilter__book
+.header__book
   width: 216px
   height: 38px
   background: #FFFFFF
   border: 1px solid #CED4DA
   border-radius: 4px
   padding-left: 15px
-  font-family: 'Inter'
+  font-family: 'Inter', sans-serif
   font-style: normal
   font-weight: 400
   font-size: 16px
   line-height: 21px
   color: #ABB5BE
 
-@media (max-width:'768px') 
-.formFilter__book
+@media (max-width: 785px) 
+ .header__formFilter > form
+  display: grid
+  grid-template-rows: 1fr 1fr
+ .header__field
+  width: 100%
+ .header__book
+  width: 100%  
   
     
   

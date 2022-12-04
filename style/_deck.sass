@@ -2,31 +2,37 @@
    border-top: solid 1px #DEE2E6
    &__cards
     display: grid
-    grid-gap:20px
-    grid-template-columns: repeat(auto-fill, minmax(320px, 334px))
-    padding: 40px 0 0 0
+    grid-gap: 20px
+    grid-template-columns: repeat(2, 334px)
     justify-content: center
+    padding: 40px  40px 0 40px
+   &__card
+    max-width: 334px
    &__img
     width: 334px
     height: 192px 
    &__bio
+    width: 334px
     padding: 24px
     background: #FFFFFF
    &__text
-    font-family: 'Inter'
+    font-family: 'Inter', sans-serif
     font-style: normal
     font-weight: 400
     font-size: 16px
     line-height: 28px
     color: #152536
    &__text-bolt
-    font-family: 'Inter'
+    font-family: 'Inter', sans-serif
     font-style: normal
     font-weight: 800
     font-size: 20px
     line-height: 24px
     color: #152536
 
+@media (max-width: 785px)
+    .deck__cards
+     grid-template-columns: repeat(1, 334px)
    
     
 
